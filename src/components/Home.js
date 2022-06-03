@@ -6,7 +6,7 @@ import HeroImage from "./HeroImage/HeroImage";
 import Grid from "./Grid/Grid";
 import Thumb from "./Thumb/Thumb";
 import { Spinner } from "./Spinner/Spinner.styles";
-import SearchBar from "../SearchBar/SearchBar";
+import SearchBar from "../components/SearchBar/SearchBar";
 import Button from "./Button/Button";
 
 // Hook
@@ -17,8 +17,6 @@ import ImageNotFound from "../images/no_image.jpg";
 
 const Home = () => {
   const { data, loading, error, searchTerm, setSearchTerm, setIsLoadingMore } = useHomeFetch();
-
-  console.log(data);
 
   if (error) return <div>Something went wrong...</div>
 

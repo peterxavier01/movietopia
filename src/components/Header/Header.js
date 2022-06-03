@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Wrapper, Content, LogoImg, TMDBLogoImg } from "./Header.styles";
 
 import MovietopiaLogo from "../../images/react-movie-logo.svg";
@@ -7,7 +9,9 @@ const Header = () => {
   return (
     <Wrapper>
       <Content>
-        <LogoImg src={MovietopiaLogo} alt="movietopia-logo" />
+        <Link to="/">
+          <LogoImg src={MovietopiaLogo} alt="movietopia-logo" />
+        </Link>
         <TMDBLogoImg src={TMDBLogo} alt="tmdb-logo" />
       </Content>
     </Wrapper>
