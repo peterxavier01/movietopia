@@ -41,6 +41,10 @@ export const Text = styled.div`
   .rating-directors {
     display: flex;
     justify-content: flex-start;
+
+    @media screen and (max-width: 768px) {
+     justify-content: space-around;
+    }
   }
 
   .score {
@@ -56,8 +60,13 @@ export const Text = styled.div`
     margin: 0;
   }
 
+  .date {
+    padding-right: 1em;
+  }
+
   .director {
     margin: 0 0 0 40px;
+    margin-right: 2em;
 
     p {
       margin: 0;

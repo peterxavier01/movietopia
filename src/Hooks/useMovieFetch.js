@@ -29,7 +29,7 @@ const useMovieFetch = (movieId) => {
         setLoading(false);
       } catch (error) {
         setError(true);
-      }
+      };
     };
     
     fetchMovie();
