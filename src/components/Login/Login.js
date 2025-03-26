@@ -38,7 +38,6 @@ const Login = () => {
         password
       );
 
-      console.log(sessionId);
       setUser({ sessionId: sessionId.session_id, username });
 
       navigate("/");
